@@ -3,12 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <title>Lectia 1 HTML&CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!--Header Section-->
     <header>
       <div>
-        <a href="#"><img src="./Logo.svg" alt="Logo" /></a>
+        <a href="#"><img src="./images/logo.svg" alt="Logo" /></a>
       </div>
       <nav>
         <ul>
@@ -18,8 +25,8 @@
           <li><a href="#">Contacts</a></li>
         </ul>
       </nav>
-      <div><a href="tel:+38 044 111 11 11">+38 044 111 11 11</a></div>
-      <button>Book a Service</button>
+      <div><a href="tel:+380441111111">+38 044 111 11 11</a></div>
+      <button type="button">Book a Service</button>
     </header>
 
     <!--Portiunea principala a paginii web-->
@@ -37,10 +44,9 @@
       <section>
         <!--Div cu imagini-->
         <div>
-          <img src="img-1.jpg" alt="img-1" />
-          <img src="img-2.jpg" alt="img-2" />
+          <img src="./images/img-1.jpg" alt="img-1" width="100px" />
+          <img src="./images/img-2.jpg" alt="img-2" width="100px" />
         </div>
-
         <!--Div cu info-->
         <div>
           <h5>About</h5>
@@ -56,42 +62,77 @@
             with clients. Therefore, we are always ready to improve everyone who
             comes to us!
           </p>
-          <button>Book a service</button>
+          <button type="button">Book a service</button>
         </div>
       </section>
       <!--Prices & services section-->
       <section>
         <h5>Spend time in the company of the best craftsmen</h5>
-        <h1>Services and Prices</h1>
+        <h2>Services and Prices</h2>
         <ul>
-          <li>Men's Haircut from 300 UAH</li>
-          <li>Beard Trim from 200 UAH</li>
-          <li>Mustache Trim from 200 UAH</li>
-          <li>Straight Razor Shave from 200 UAH</li>
+          <li>
+            <p>Men's Haircut <span>from 300 UAH </span></p>
+          </li>
+          <li>
+            <p>Beard Trim <span>from 200 UAH</span></p>
+          </li>
+          <li>
+            <p>Mustache Trim <span>from 200 UAH</span></p>
+          </li>
+          <li>
+            <p>Straight Razor Shave <span>from 200 UAH</span></p>
+          </li>
         </ul>
         <ul>
-          <li>Trainee Haircut <span>from 50 UAH</span></li>
-          <li>Buzz Cut <span>from 200 UAH</span></li>
-          <li>Kids Haircut (12 y.o.) <span>from 300 UAH</span></li>
-          <li>Gray Coverage <span>from 200 UAH</span></li>
+          <li>
+            <p>Trainee Haircut <span>from 50 UAH</span></p>
+          </li>
+          <li>
+            <p>Buzz Cut <span>from 200 UAH</span></p>
+          </li>
+
+          <li>
+            <p>Kids Haircut (12 y.o.) <span>from 300 UAH</span></p>
+          </li>
+          <li>
+            <p>Gray Coverage <span>from 200 UAH</span></p>
+          </li>
         </ul>
+        <button type="button">Book a service</button>
       </section>
-      <!--Revius section-->
+      <!--Reviews section-->
       <section>
         <ul>
           <li>
-            <p><strong>Satisfied Customers per Day</strong></p>
+            <p>
+              <strong> 600<sup>+</sup></strong>
+            </p>
+            <p>Satisfied Customers <br />per Day</p>
           </li>
-          <li></li>
-          <li></li>
+          <li>
+            <p><strong>20</strong><sup>+</sup></p>
+            <p>The Best Barbers <br />of Kyiv</p>
+          </li>
+          <li>
+            <p>
+              <strong>50 <sup>+</sup></strong>
+            </p>
+            <p>Excellent Service <br />Awards</p>
+          </li>
+          <li>
+            <p>
+              <strong>100 <sup>+</sup></strong>
+            </p>
+            <p>Gifts for Regular <br />Customers</p>
+          </li>
         </ul>
         <div>
           <h5>Old school</h5>
-          <h1>Why do they come to us?</h1>
-          <h1>
+          <h2>Why do they come to us?</h2>
+          <p>
             Only good things are said about us. But it is better to see and feel
             1 time than to read 10 times.
-          </h1>
+          </p>
         </div>
       </section>
       <!--Our barbers section-->
@@ -99,33 +140,50 @@
         <h5>for true connoisseurs of the atmosphere</h5>
         <h2>Our Barbers</h2>
         <!--container cu carduri despre frizeri-->
-        <div>
+        <div style="display: flex; gap: 30px">
           <!--container1-->
           <div>
-            <img src="img1.jpg" alt="" />
+            <img src="./images/John Smith.jpg" alt="John Smith" width="100px" />
             <p>John Smith</p>
             <p>Extreme Barber</p>
           </div>
           <!--container2-->
           <div>
-            <img src="" alt="" />
+            <img
+              src="./images/Michale Doe.jpg"
+              alt="Michael Doe"
+              width="100px"
+            />
             <p>Michele Doe</p>
             <p>Extreme Barber</p>
           </div>
           <!--container3-->
           <div>
-            <img src="" alt="" />
+            <img src="./images/Alan Black.jpg" alt="Alan Black" width="100px" />
             <p>Alan Black</p>
             <p>Extreme Barber</p>
           </div>
         </div>
       </section>
       <!--Our place section-->
-      <!--footer section-->
 
-      <section></section>
+      <section>
+        <h5>In Latin, "barba" means "beard"</h5>
+        <div>
+          <img src="./images/Foto-1.jpg" alt="Foto-1" />
+          <img src="./images/Foto-2.jpg" alt="Foto-2" />
+          <img src="./images/Foto-3.jpg" alt="Foto-3" />
+          <img src="./images/Foto-4.jpg" alt="Foto-4" />
+        </div>
+      </section>
       <!--Contacts section-->
       <section></section>
     </main>
+    <!--Footer section-->
+    <footer>
+      <p>&copy;Copyright 2022</p>
+      <li>Instagram</li>
+      <li>Youtube</li>
+    </footer>
   </body>
 </html>
