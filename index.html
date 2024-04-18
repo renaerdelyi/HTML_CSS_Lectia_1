@@ -13,45 +13,49 @@
   </head>
   <body>
     <!--Header Section-->
-    <header>
-      <div>
+    <header class="header">
+      <div class="header__logo">
         <a href="#"><img src="./images/logo.svg" alt="Logo" /></a>
       </div>
-      <nav>
+      <nav class="header__navigation">
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services and Prices</a></li>
-          <li><a href="#">Barbers</a></li>
-          <li><a href="#">Contacts</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#prices-section">Services and Prices</a></li>
+          <li><a href="#our-barbers-section">Barbers</a></li>
+          <li><a href="#contacts-section">Contacts</a></li>
         </ul>
       </nav>
-      <div><a href="tel:+380441111111">+38 044 111 11 11</a></div>
-      <button type="button">Book a Service</button>
+      <div class="header__info">
+        <a href="tel:+380441111111">+38 044 111 11 11</a>
+      </div>
+      <button class="header__booking button" type="button">
+        Book a Service
+      </button>
     </header>
 
     <!--Portiunea principala a paginii web-->
     <main>
       <!--Hero section-->
-      <section>
-        <h5>A hair salon for men in Kyiv</h5>
-        <h1>BarberShop</h1>
-        <p>
+      <section class="hero-section">
+        <h5 class="hero-section__subtitle">A hair salon for men in Kyiv</h5>
+        <h1 class="hero-section__title">BarberShop</h1>
+        <p class="hero-section__text">
           We are experts in trendy men's haircuts. <br />
           We work quickly, carefully, and tastefully.
         </p>
       </section>
       <!--About section-->
-      <section>
+      <section class="about">
         <!--Div cu imagini-->
         <div>
-          <img src="./images/img-1.jpg" alt="img-1" width="100px" />
-          <img src="./images/img-2.jpg" alt="img-2" width="100px" />
+          <img src="./images/img-1.jpg" alt="img-1" width="100" />
+          <img src="./images/img-2.jpg" alt="img-2" width="100" />
         </div>
         <!--Div cu info-->
         <div>
-          <h5>About</h5>
-          <h2>The Best Barbershop in Your City</h2>
-          <p>
+          <h5 class="about__subtitle">About</h5>
+          <h2 class="about__title">The Best Barbershop in Your City</h2>
+          <p class="about__text">
             If you want to add more confidence to your image, you are definitely
             in the right place.
           </p>
@@ -62,11 +66,11 @@
             with clients. Therefore, we are always ready to improve everyone who
             comes to us!
           </p>
-          <button type="button">Book a service</button>
+          <button class="about__button button">Book a service</button>
         </div>
       </section>
       <!--Prices & services section-->
-      <section>
+      <section id="prices-section">
         <h5>Spend time in the company of the best craftsmen</h5>
         <h2>Services and Prices</h2>
         <ul>
@@ -90,7 +94,6 @@
           <li>
             <p>Buzz Cut <span>from 200 UAH</span></p>
           </li>
-
           <li>
             <p>Kids Haircut (12 y.o.) <span>from 300 UAH</span></p>
           </li>
@@ -101,7 +104,7 @@
         <button type="button">Book a service</button>
       </section>
       <!--Reviews section-->
-      <section>
+      <section id="reviews-section">
         <ul>
           <li>
             <p>
@@ -136,38 +139,33 @@
         </div>
       </section>
       <!--Our barbers section-->
-      <section>
+      <section id="our-barbers-section">
         <h5>for true connoisseurs of the atmosphere</h5>
         <h2>Our Barbers</h2>
         <!--container cu carduri despre frizeri-->
         <div style="display: flex; gap: 30px">
           <!--container1-->
           <div>
-            <img src="./images/John Smith.jpg" alt="John Smith" width="100px" />
+            <img src="./images/John Smith.jpg" alt="John Smith" width="100" />
             <p>John Smith</p>
             <p>Extreme Barber</p>
           </div>
           <!--container2-->
           <div>
-            <img
-              src="./images/Michale Doe.jpg"
-              alt="Michael Doe"
-              width="100px"
-            />
+            <img src="./images/Michale Doe.jpg" alt="Michael Doe" width="100" />
             <p>Michele Doe</p>
             <p>Extreme Barber</p>
           </div>
           <!--container3-->
           <div>
-            <img src="./images/Alan Black.jpg" alt="Alan Black" width="100px" />
+            <img src="./images/Alan Black.jpg" alt="Alan Black" width="100" />
             <p>Alan Black</p>
             <p>Extreme Barber</p>
           </div>
         </div>
       </section>
       <!--Our place section-->
-
-      <section>
+      <section id="our-place-section">
         <h5>In Latin, "barba" means "beard"</h5>
         <div>
           <img src="./images/Foto-1.jpg" alt="Foto-1" />
@@ -177,13 +175,15 @@
         </div>
       </section>
       <!--Contacts section-->
-      <section></section>
+      <section id="contacts-section"></section>
     </main>
     <!--Footer section-->
     <footer>
       <p>&copy;Copyright 2022</p>
-      <li>Instagram</li>
-      <li>Youtube</li>
+      <ul>
+        <li>Instagram</li>
+        <li>Youtube</li>
+      </ul>
     </footer>
   </body>
 </html>
