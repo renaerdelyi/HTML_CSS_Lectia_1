@@ -27,13 +27,21 @@ a {
 }
 /*stilizare pentru header*/
 .header {
-  background-color: #303030;
+  margin-bottom: -86px;
+  padding-top: 30px;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .header__logo {
   background-color: var(--white);
 }
 .header__navigation ul {
-  list-style: none;
+  display: flex;
+  gap: 40px;
 }
 .header__navigation a {
   text-decoration: none;
@@ -76,6 +84,10 @@ a {
 .hero-section {
   background-color: #303030;
   height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.hero-section .container {
 }
 .hero-section__subtitle {
   font-size: 11px;
@@ -100,11 +112,25 @@ a {
 }
 /*stilizare pentru about section*/
 .about {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+.about .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about__images {
+  display: flex;
+  flex: 1;
+  gap: 30px;
 }
 .about__image {
-  display: inline-block;
   width: 270px;
   height: 445px;
+}
+.about__info {
+  flex: 1;
 }
 .about__subtitle {
   font-size: 11px;
@@ -113,6 +139,7 @@ a {
   line-height: 14px;
   color: var(--black);
   margin-bottom: 20px;
+  letter-spacing: 0.1em;
 }
 .about__title {
   font-size: 42px;
@@ -121,6 +148,7 @@ a {
   line-height: 50px;
   color: var(--black);
   margin-bottom: 20px;
+  letter-spacing: 0.05em;
 }
 .about__text {
   font-size: 18px;
@@ -129,6 +157,16 @@ a {
   line-height: 30px;
   color: var(--black);
   margin-bottom: 20px;
+  letter-spacing: 0.02em;
+}
+.about__text-smaller {
+  font-size: 14px;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--black);
+  margin-bottom: 20px;
+  letter-spacing: 0.02em;
 }
 .about__button {
   color: var(--black);
@@ -138,6 +176,11 @@ a {
 .services {
   background-color: var(--black);
   color: var(--light-black);
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+.service__container {
+  display: flex;
 }
 .services__subtitle {
   font-size: 11px;
@@ -161,7 +204,11 @@ a {
   font-weight: 400;
   line-height: 30px;
   color: var(--light-black);
+  flex: 1;
+  background-color: #555555;
+  padding: 28px;
 }
+
 .services__description {
   margin-bottom: 20px;
 }
@@ -202,5 +249,7 @@ a {
   color: #555555;
 }
 .container {
-  padding: 130px 55px;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
 }
